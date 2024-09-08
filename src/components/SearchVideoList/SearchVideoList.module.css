@@ -13,3 +13,13 @@
     outline: none;
     font-size: 1.125rem;
 }
+
+@media (max-width: 480px) {
+    .container {
+        width: 280px;
+    }
+
+    .container input {
+        width: 280px;
+    }
+}

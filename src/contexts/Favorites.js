@@ -33,5 +33,15 @@ export function useFavoriteContext() {
             return setFavorite(newList)
         }
 
+        // quarto item a se fazer é verificar se o item é repitido e retira-lo da lista
+        newList = favorite.filter((fav) => fav.id !== newFavorite.id )
+        return setFavorite(newList)
+
     }
+
+    return {
+        favorite,
+        addFavorite
+    }
+    
 }

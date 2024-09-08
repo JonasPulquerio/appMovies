@@ -5,14 +5,16 @@ import styles from "./Watch.module.css";
 import { useParams } from "react-router-dom";
 import videos from "../../json/videos.json"
 import PageNotFound from "../PageNotFound";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
 
 function Watch() {
     const params = useParams()
     const video = videos.find((video) => { return video.id === params.id })
-    if(!video) { return <PageNotFound />}
+    if (!video) { return <PageNotFound /> }
 
     return (
         <>
+            <ScrollToTopButton />
             <Header />
             <Container>
                 <section className={styles.watch}>
