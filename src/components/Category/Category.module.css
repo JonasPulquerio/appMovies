@@ -18,3 +18,9 @@
 .category h2 {
     padding-block: 1.5rem 1rem;
 }
+
+@media (max-width: 380px) {
+    .container div {
+        margin-left: -35px;
+    }
+}
